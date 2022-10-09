@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "南市全球英檢助手",
+  "version": "0.1.0",
+  "description": "台南市民全球英語測驗 (Tainan City Global English Test) 入門級/進階級線上測驗助手",
+  "homepage_url": "https://github.com/awdr74100/tnget-webextension",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "css": ["styles/utils.css"],
+      "run_at": "document_start",
+      "matches": ["https://englishresource.tainan.gov.tw/*"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["scripts/injected.js"],
+      "matches": ["https://englishresource.tainan.gov.tw/*"]
+    }
+  ]
+}

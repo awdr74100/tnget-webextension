@@ -1,0 +1,16 @@
+.hint .highlight {
+  color: #1fa6b2;
+}
+
+.btn--hint {
+  color: #fff;
+  background-color: #1fa6b2;
+}
+
+.btn--hint:hover {
+  background-color: #23b8c5;
+}
+
+.ml-2 {
+  margin-left: 20px;
+}
