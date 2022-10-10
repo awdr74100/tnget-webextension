@@ -11,6 +11,10 @@
   background-color: #23b8c5;
 }
 
+.btn--hint:active {
+  background-color: #1fa6b2;
+}
+
 .ml-2 {
   margin-left: 20px;
 }
